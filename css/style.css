@@ -1,0 +1,75 @@
+/* Projects Section */
+.projects-section {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-8);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-6);
+}
+
+.projects-more {
+    text-align: center;
+    margin-top: var(--space-12);
+}
+
+/* Contact Form */
+.contact-form-container {
+    width: 50%;
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    box-shadow: 0 20px 40px var(--shadow-color);
+    position: relative;
+    z-index: var(--z-10);
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    :root {
+        --text-6xl: 2.25rem;
+        --text-5xl: 1.875rem;
+        --text-4xl: 1.5rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-btns .primary-btn {
+        margin-right: 0;
+        margin-bottom: var(--space-4);
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .skill-icon {
+        margin-right: 0;
+        margin-bottom: var(--space-3);
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: var(--space-3);
+    }
+}
